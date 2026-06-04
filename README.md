@@ -1,5 +1,4 @@
 # 🧠 Codsoft Internship Projects
-
 > A collection of machine learning projects built during my internship at Codsoft.
 
 ---
@@ -20,6 +19,13 @@ Regression model predicting IMDb ratings of Indian movies with 80% accuracy (R²
 
 ---
 
+### 🌸 3. Iris Flower Classification
+Multi-class classification model identifying Iris flower species from sepal and petal measurements with 96.67% accuracy using SVM.
+
+📂 [View Project](https://github.com/Zishaniitm/Codsoft-Internship-Projects/tree/main/Iris-Flower-Classification)
+
+---
+
 ## 🛠️ Tech Stack
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square&logo=python)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-orange?style=flat-square&logo=scikit-learn)
@@ -30,8 +36,7 @@ Regression model predicting IMDb ratings of Indian movies with 80% accuracy (R²
 
 ## 👤 Author
 ## Zishan
-
 [LinkedIn](https://www.linkedin.com/in/zishan-ahmad-155b24239/) · [GitHub](https://github.com/Zishaniitm)
----
 
+---
 *If you found this useful, drop a ⭐ on the repo!*
