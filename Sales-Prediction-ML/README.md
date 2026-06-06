@@ -204,7 +204,7 @@ jupyter>=1.0.0
 **Zishan**
 BCA Student | IIT Madras Data Science Student
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/zishan-ahmad-155b24239/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/Zishaniitm)
 
 ---
