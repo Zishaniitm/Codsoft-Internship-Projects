@@ -46,7 +46,7 @@ Regression model that predicts IMDb movie ratings based on genre, director, acto
 | Detail | Info |
 |---|---|
 | Algorithm | Multiple Linear Regression |
-| Dataset | IMDb Indian Movies Dataset |
+| Dataset | [Kaggle: IMDb Indian Movies Dataset](https://www.kaggle.com/datasets/adrianmcmahon/imdb-india-movies) |
 | Type | Regression |
 | Target | IMDb Rating (0–10) |
 | R² Score | **0.8032** |
