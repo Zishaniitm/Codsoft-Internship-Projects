@@ -1,13 +1,13 @@
 # 🤖 Codsoft Internship Projects
 
-> A collection of machine learning projects built during my internship at CodSoft.  
-> Each project covers a real-world problem solved end-to-end — from EDA to model deployment.
+> A collection of end-to-end machine learning projects built during my internship at CodSoft — covering regression, binary classification, multi-class classification, and imbalanced learning.
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?style=flat&logo=scikit-learn)
 ![Pandas](https://img.shields.io/badge/Pandas-Data-green?style=flat&logo=pandas)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebooks-yellow?style=flat&logo=googlecolab)
 ![Status](https://img.shields.io/badge/Internship-CodSoft-red?style=flat)
+![Projects](https://img.shields.io/badge/Projects-4-brightgreen?style=flat)
 
 ---
 
@@ -19,7 +19,7 @@
 
 > **Can we predict who survived the Titanic disaster?**
 
-Binary classification model that predicts passenger survival using passenger data like age, sex, ticket class, and embarkation point.
+Binary classification model predicting passenger survival using demographic and ticket data.
 
 | Detail | Info |
 |---|---|
@@ -27,11 +27,6 @@ Binary classification model that predicts passenger survival using passenger dat
 | Dataset | [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic) |
 | Type | Binary Classification |
 | Target | Survived (0 = No, 1 = Yes) |
-
-**Key Highlights:**
-- Handled missing values in `Age` and `Embarked` columns
-- Feature engineered `Title` from passenger names
-- Compared Logistic Regression vs Random Forest performance
 
 📂 [View Project](./Titanic-Survival-Prediction/)
 
@@ -41,20 +36,14 @@ Binary classification model that predicts passenger survival using passenger dat
 
 > **Can we predict IMDb ratings of Indian movies?**
 
-Regression model that predicts IMDb movie ratings based on genre, director, actors, votes, and release year.
+Regression model predicting movie ratings from genre, director, cast, and metadata.
 
 | Detail | Info |
 |---|---|
 | Algorithm | Multiple Linear Regression |
-| Dataset | [Kaggle: IMDb Indian Movies Dataset](https://www.kaggle.com/datasets/adrianmcmahon/imdb-india-movies) |
+| Dataset | IMDb Indian Movies Dataset |
 | Type | Regression |
-| Target | IMDb Rating (0–10) |
 | R² Score | **0.8032** |
-
-**Key Highlights:**
-- Extensive text preprocessing on Genre, Director, Actor columns
-- Label encoding for categorical features
-- Achieved 80% accuracy in predicting movie ratings
 
 📂 [View Project](./Movie-Rating-Prediction/)
 
@@ -62,48 +51,70 @@ Regression model that predicts IMDb movie ratings based on genre, director, acto
 
 ### 🌸 3. Iris Flower Classification
 
-> **Can we classify iris flowers by species from measurements alone?**
+> **Can we identify iris species from petal and sepal measurements alone?**
 
-Multi-class classification model that identifies Iris flower species (Setosa, Versicolor, Virginica) from sepal and petal measurements.
+Multi-class classification identifying 3 iris species with near-perfect accuracy.
 
 | Detail | Info |
 |---|---|
 | Algorithm | Support Vector Machine (SVM) |
-| Dataset | [Iris Dataset — UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/iris) |
+| Dataset | [UCI Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris) |
 | Type | Multi-class Classification |
-| Target | Species (3 classes) |
 | Accuracy | **96.67%** |
-
-**Key Highlights:**
-- Perfect class separation for Setosa species
-- Visualized decision boundaries with pair plots
-- SVM outperformed KNN and Decision Tree on this dataset
 
 📂 [View Project](./Iris-Flower-Classification/)
 
 ---
 
-### 📈 4. Sales Prediction Using ML
+### 📈 4. Sales Prediction
 
 > **How much will we sell if we spend X on advertising?**
 
-Regression model that predicts product sales based on advertising budgets across TV, Radio, and Newspaper channels. Helps businesses make smarter, data-driven marketing decisions.
+Regression model predicting product sales from TV, Radio and Newspaper ad budgets.
 
 | Detail | Info |
 |---|---|
 | Algorithm | Multiple Linear Regression |
-| Dataset | [Kaggle — Advertising Dataset](https://www.kaggle.com/datasets/ashydv/advertising-dataset) |
+| Dataset | [Kaggle Advertising Dataset](https://www.kaggle.com/datasets/ashydv/advertising-dataset) |
 | Type | Regression |
-| Target | Sales (units in thousands) |
 | R² Score | **0.8972** |
 
-**Key Highlights:**
-- EDA revealed TV has the strongest sales correlation (0.78)
-- Newspaper spend has near-zero impact — key business insight
-- 75%+ predictions accurate within ±2,000 units
-- Built a 9-plot visualization dashboard
+**Key insight:** TV has the strongest sales correlation (0.78). Newspaper spend has near-zero impact.
 
 📂 [View Project](./Sales-Prediction-ML/)
+
+---
+
+### 💳 5. Credit Card Fraud Detection
+
+> **Can we catch fraudulent transactions before the customer even notices?**
+
+Binary classification model detecting fraud in a severely imbalanced dataset (577:1 ratio) — achieving F1 = 0.84 with only 5 false alarms per 56,962 transactions.
+
+| Detail | Info |
+|---|---|
+| Algorithm | Random Forest (tuned, 200 trees) |
+| Dataset | [Kaggle ULB Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) |
+| Type | Binary Classification (Imbalanced) |
+| F1 Score | **0.84** |
+| Frauds Caught | **75 / 98** |
+| False Alarms | **5 only** |
+
+**Key techniques:** SMOTE oversampling, threshold tuning, Precision-Recall optimization.
+
+📂 [View Project](./Credit-Card-Fraud-Detection/)
+
+---
+
+## 📊 Complete Project Summary
+
+| # | Project | Type | Algorithm | Key Score |
+|---|---|---|---|---|
+| 1 | Titanic Survival | Binary Classification | Logistic Regression / RF | — |
+| 2 | Movie Rating | Regression | Multiple Linear Regression | R² = 0.80 |
+| 3 | Iris Flower | Multi-class Classification | SVM | Accuracy = 96.67% |
+| 4 | Sales Prediction | Regression | Multiple Linear Regression | R² = 0.90 |
+| 5 | Credit Card Fraud | Imbalanced Classification | Random Forest + SMOTE | F1 = 0.84 |
 
 ---
 
@@ -111,22 +122,12 @@ Regression model that predicts product sales based on advertising budgets across
 
 | Tool | Purpose |
 |---|---|
-| Python 3.10 | Core programming language |
-| Pandas & NumPy | Data manipulation and numerical computing |
-| Matplotlib & Seaborn | Data visualization |
-| Scikit-learn | Machine learning models and evaluation |
-| Google Colab | Cloud-based notebook environment |
-
----
-
-## 📊 Project Summary
-
-| # | Project | Type | Algorithm | Score |
-|---|---|---|---|---|
-| 1 | Titanic Survival | Classification | Logistic Regression / Random Forest | — |
-| 2 | Movie Rating | Regression | Multiple Linear Regression | R² = 0.80 |
-| 3 | Iris Flower | Classification | SVM | Accuracy = 96.67% |
-| 4 | Sales Prediction | Regression | Multiple Linear Regression | R² = 0.90 |
+| Python 3.10 | Core language |
+| Pandas & NumPy | Data manipulation |
+| Matplotlib & Seaborn | Visualizations |
+| Scikit-learn | ML models & evaluation |
+| imbalanced-learn | SMOTE for class imbalance |
+| Google Colab | Cloud notebook environment |
 
 ---
 
@@ -136,8 +137,8 @@ Regression model that predicts product sales based on advertising budgets across
 # Clone this repository
 git clone https://github.com/Zishaniitm/Codsoft-Internship-Projects.git
 
-# Navigate into any project folder
-cd Codsoft-Internship-Projects/Sales-Prediction-ML
+# Navigate into any project
+cd Codsoft-Internship-Projects/Credit-Card-Fraud-Detection
 
 # Install dependencies
 pip install -r requirements.txt
@@ -146,24 +147,15 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Or open directly in **Google Colab** — each project folder contains a `.ipynb` notebook ready to run.
-
 ---
 
 ## 👤 Author
 
-**Zishan**  
-BCA Student | IIT Madras BS Data Science Student  
-CodSoft ML Intern
+**Zishan**
+BCA Student | IIT Madras BS Data Science Student | CodSoft ML Intern
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/zishan-ahmad-155b24239/)
 [![GitHub](https://img.shields.io/badge/GitHub-Zishaniitm-black?style=flat&logo=github)](https://github.com/Zishaniitm)
-
----
-
-## 📄 License
-
-This repository is open source and available under the [MIT License](./LICENSE).
 
 ---
 
