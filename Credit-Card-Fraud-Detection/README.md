@@ -436,6 +436,3 @@ BCA Student | IIT Madras BS Data Science Student | CodSoft ML Intern
 *If you found this useful, drop a ⭐ on the repo!*)
 [![GitHub](https://img.shields.io/badge/GitHub-Zishaniitm-black?style=flat&logo=github)](https://github.com/Zishaniitm)
 
----
-
-*If you found this useful, drop a ⭐ on the repo!*
